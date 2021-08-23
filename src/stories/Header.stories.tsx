@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
 export const ColorBlack = Template.bind({});
 ColorBlack.args = {
-  colorBlack: true,
+  colorBlack: '#333',
 };
 
 export const LoggedOut = Template.bind({});
