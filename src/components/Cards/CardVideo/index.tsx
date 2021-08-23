@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Container } from './styles'
 
 export interface CardVideoProps {
