@@ -10,7 +10,7 @@
 
 ## Link para acessar o site deste aplicativo
 
-<a>https://solides.vercel.app/</a>
+<a>https://disney-clone-blue.vercel.app</a>
 
 ## Pequena descrição
 
