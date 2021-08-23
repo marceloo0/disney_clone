@@ -43,11 +43,12 @@ const Detail = ({ movie }: DetailProps) => {
       </ContentMeta>
     </Container>
   )
-}
+} 
+
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const result = await api.get('fc292de1-8f71-4f87-9cdf-92a5f3bb9bc5')
-  const movies = await result?.data?.movies
+  const movies = await result?.data?.movies as MoviesProps
 
   const paths = Object.values(movies).map(movie => {
     return {
