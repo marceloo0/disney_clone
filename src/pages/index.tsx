@@ -1,16 +1,12 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import { useAuth } from '../hooks/useAuth'
 import { ButtonWithIcon } from '../components'
 import { Container, Content, Section, Title, Description, Footer, AccessSection, Background } from '../styles/pages/home'
 
 const Home: NextPage = () => {
-  const { signout, signinGoogle, loading } = useAuth()
-  // async function handleGoogle() {
-  //   await firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider)
-  // }
-  console.log(loading)
+  const { signinGoogle, loading } = useAuth()
+  
   return (
     <Container>
       <Content>

@@ -2,11 +2,19 @@
 import { Container } from './styles'
 
 export interface ButtonCircleProps {
+    /**
+   * What background color to use
+   */
   backgroundColor?: string
+    /**
+   * What text color to use
+   */
   color?: string
   icon?: React.ReactNode | React.Component
+    /**
+   * How large should the button be?
+   */
   size?: 'small' | 'medium' | 'large'
-  active?: boolean
   onClick?: () => void
   name?: string
 }
@@ -16,7 +24,6 @@ export const ButtonCircleIcon: React.FC<ButtonCircleProps> = ({
   color, 
   size,
   icon,
-  active = false,
   name,
   ...props
 }) => {
@@ -26,7 +33,6 @@ export const ButtonCircleIcon: React.FC<ButtonCircleProps> = ({
       color={color}
       icon={icon}
       size={size}
-      active={active}
       {...props}
     >
       {icon ? icon : <img src={name} alt='' />}

@@ -21,7 +21,7 @@ export const Header: React.FC<HeaderProps> = ({ colorBlack }) => {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <script
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
@@ -32,7 +32,7 @@ export const Header: React.FC<HeaderProps> = ({ colorBlack }) => {
             `,
           }}
         />
-      </Head>
+      </Head> */}
       <Container colorBlack={colorBlack}>
         <NavMenu>
           <Image src='/logo.svg' width={80} height={60} alt='logo' />

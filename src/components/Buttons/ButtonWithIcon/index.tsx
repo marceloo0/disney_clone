@@ -24,7 +24,7 @@ export const ButtonWithIcon: React.FC<ButtonProps> = ({
   name,
   onClick,
   size,
-  loading,
+  loading = false,
   speed = '0.65s',
   ...props
 }) => {
